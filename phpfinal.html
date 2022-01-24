@@ -1,0 +1,17 @@
+﻿<?php
+
+try{
+
+    $db = new PDO("Database51.accdb");
+
+     if ($db)
+        echo "Veritabanı Bağlantısı Başarılı!";
+
+} catch(Exception $e){
+
+    echo "Veritabanı Bağlantısı Başarısız!
+<br>".$e;
+
+}
+
+?>
